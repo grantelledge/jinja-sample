@@ -11,14 +11,13 @@ from jinja2 import Environment, FileSystemLoader
 # with open('output/filler1.html', 'w') as f:
 #     f.write(output_page)
 
-
 # Compile a batch and write them to files with Jinja2
 pages = []
 for file in os.listdir('./'):
     if file.endswith('.html') and not file.startswith('mainframe'):
         pages.append(file)
+
 environment = Environment(loader = FileSystemLoader(os.getcwd()))
-print(pages)
 
 for page in pages:
     template = environment.get_template(page)

@@ -5,3 +5,5 @@ Super simple example of outputting merged HTML files using the Python [Jinja2](h
 1. Jinja is not in the standard Python library, so will need to be installed: `pip install Jinja2`
 2. The sample pages will be built in `/output` after running `./build.py`.
 3. HTML files must be in the root directory, or else `./build.py` will need to be modified accordingly
+
+### Note: ACP7-Doc contains a more complete example of this tool.
